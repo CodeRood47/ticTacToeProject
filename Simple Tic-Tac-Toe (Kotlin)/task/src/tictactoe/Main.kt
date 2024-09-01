@@ -1,18 +1,25 @@
 package tictactoe
 
 fun main() {
-    val x = "X"
-    val o = "O"
 
-    print(x)
-    print(x)
-    print(o)
-   println()
-    print(x)
-    print(o)
-    print(o)
-    println()
-    print(o)
-    print(x)
-    print(x)
+    var i = 0
+    print("> ")
+    val input = readln()
+    println("---------")
+    print("| ")
+    while (i < 9) {
+        print("${input[i]} ")
+        if (i == 2 || i == 5 || i == 8) {
+            println("|")
+            if (i == 2 || i == 5) print("| ")
+
+        }
+        i++
+
+    }
+    println("---------")
 }
+
+
+
+
